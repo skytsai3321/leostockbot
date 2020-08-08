@@ -11,7 +11,7 @@ Authdb = 'leostockdb'
 
 def constructor():
     client = MongoClient(
-        "mongodb+srv://leotsai:5ram1o@cluster0.6b9yz.gcp.mongodb.net/leostockdb?retryWrites=true & w=majority")
+        "mongodb+srv://leotsai:5ram1o@cluster0.6b9yz.gcp.mongodb.net/leostockdb?retryWrites=true&w=majority")
     db = client[Authdb]
     return db
 
