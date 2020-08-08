@@ -35,7 +35,7 @@ def write_user_stock_fountion(stock, bs, price):
 def delete_user_stock_fountion(stock):
     db = constructor()
     collect = db['mystock']
-    collect.delete({
+    collect.remove({
         "stock": stock
     })
 
